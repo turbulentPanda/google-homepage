@@ -46,3 +46,58 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/******** End Reset: Unique Styling Begins Here ********/
+
+/******** General Page Layout and Setup ********/
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 63px 1fr 63px;
+    height: 100%;
+    width: 100%;
+}
+
+/******** Header ********/
+.header {
+    background: mistyrose;
+    grid-area: header;
+    height: 100%;
+    width: 100%;
+}
+
+/******** Main (Logo, Searchbar) ********/
+.main {
+    background: white;
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+}
+
+/******** Footer ********/
+.footer {
+    background: lightblue;
+    grid-area: footer;
+    height: 100%;
+    width: 100%;
+}
