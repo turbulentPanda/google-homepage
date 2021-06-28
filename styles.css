@@ -238,6 +238,10 @@ body {
     margin-left: 10px;
 }
 
+.voice-control:hover {
+    cursor: pointer;
+}
+
 .voice-control-icon {
     width: 26px;
 }
