@@ -260,11 +260,35 @@ body {
 .footer {
     background: #f2f2f2;
     color: var(--footer-text-color);
+    display: grid;
+    font-size: 19px;
+    grid-template-areas:
+        "business-and-search   emissions-statement   conditions-settings";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     grid-area: footer;
     height: 100%;
+    padding: 0 25px;
+    place-items: center;
     width: 100%;
 }
 
-img {
-    width: 50px;
+.footer li {
+    margin: 0 20px;
 }
+
+.business-and-search {
+    display: flex;
+    justify-self: start;
+}
+
+.emissions-icon {
+    margin-right: 4px;
+    width: 16px;
+}
+
+.conditions-settings {
+    display: flex;
+    justify-self: end;
+}
+
