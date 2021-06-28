@@ -80,7 +80,7 @@ body {
     width: 100vw;
 }
 
-.main-container {
+.page-container {
     display: grid;
     grid-template-areas:
         "header"
@@ -158,10 +158,20 @@ body {
 /******** Main (Logo, Searchbar) ********/
 .main {
     background: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     grid-area: main;
     height: 100%;
+    place-items: start center;
     width: 100%;
 }
+
+.google-logo {
+    width: 350px;
+}
+
+
 
 /******** Footer ********/
 .footer {
