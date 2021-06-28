@@ -53,8 +53,8 @@ table {
 :root {
     font-family: 'Roboto', sans-serif;
     
-    --header-text-color-dark: #222;
-    --header-text-color-light: rgba(0, 0 ,0 ,.87);
+    --text-color-dark: #222;
+    --text-color-light: rgba(0, 0 ,0 ,.87);
     --footer-text-color: #70757a;
 }
 
@@ -111,14 +111,14 @@ body {
 }
 
 .navbar > a {
-    color: var(--header-text-color-dark);
+    color: var(--text-color-dark);
     font-size: 19px;
     margin: 0 15px;
 }
 
 .main-services {
     align-items: center;
-    color: var(--header-text-color-light);
+    color: var(--text-color-light);
     display: flex;
     justify-self: end;
 }
@@ -186,6 +186,59 @@ body {
 .google-logo {
     width: 350px;
 }
+
+.searchbar-container {
+    border: 2px solid rgb(223, 225, 229);
+    border-radius: 40px;
+    display: grid;
+    grid-template-areas: 
+        "search-icon   searchbar   voice-control";
+    grid-template-columns: auto 1fr auto;
+    height: 65px;
+    padding: 0 15px;
+    place-items: center;
+    width: 100%;
+}
+
+.search-magnifying-glass {
+    justify-self: start;
+    margin-right: 10px;
+    width: 30px;
+}
+
+.searchbar-container {
+    margin: 30px 0;
+}
+
+.searchbar-form {
+    height: 100%;
+    width: 100%;
+}
+
+#searchbar {
+    border: none;
+    color: var(--text-color-dark);
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+#searchbar:focus {
+    outline: none;
+}
+
+.voice-control {
+    background: none;
+    border: none;
+    justify-self: end;
+    margin-left: 10px;
+}
+
+.voice-control-icon {
+    width: 30px;
+}
+
+
 
 
 
