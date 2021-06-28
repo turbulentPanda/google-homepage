@@ -65,6 +65,16 @@ table {
     padding: 0;
 }
 
+a {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -84,10 +94,65 @@ body {
 
 /******** Header ********/
 .header {
-    background: mistyrose;
     grid-area: header;
     height: 100%;
     width: 100%;
+}
+
+.navbar {
+    display: grid;
+    grid-template-areas:
+        "about   store   main-services";
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    place-items: center;
+    width: 100%;
+}
+
+.navbar > a {
+    color: var(--header-text-color-dark);
+    font-size: 19px;
+    margin: 0 15px;
+}
+
+.main-services {
+    align-items: center;
+    color: var(--header-text-color-light);
+    display: flex;
+    justify-self: end;
+}
+
+.main-services > * {
+    margin: 0 12px;
+}
+
+.google-apps {
+    border-radius: 50%;
+    padding: 10px;
+    width: 53px;
+}
+
+.google-apps:hover {
+    background: #eff0f0;
+}
+
+.user-profile {
+    background: #7b1fa2;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    height: 43px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: center;
+    width: 43px;
+}
+
+.user-profile:hover {
+    box-shadow: 0 0 0 7px #eff0f0;
+    text-decoration: none;
 }
 
 /******** Main (Logo, Searchbar) ********/
@@ -106,3 +171,6 @@ body {
     width: 100%;
 }
 
+img {
+    width: 50px;
+}

@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0h24v24H0V0z" fill="none"/>
+  <circle style="fill: rgb(95, 99, 104);" cx="6.018" cy="6.034" r="1.968"/>
+  <circle style="fill: rgb(95, 99, 104);" cx="11.982" cy="6" r="1.968"/>
+  <circle style="fill: rgb(95, 99, 104);" cx="18.014" cy="5.986" r="1.968"/>
+  <circle style="fill: rgb(95, 99, 104);" cx="6.029" cy="11.997" r="1.968"/>
+  <circle style="fill: rgb(95, 99, 104);" cx="11.993" cy="11.963" r="1.968"/>
+  <circle style="fill: rgb(95, 99, 104);" cx="18.025" cy="11.949" r="1.968"/>
+  <circle style="fill: rgb(95, 99, 104);" cx="6.002" cy="17.983" r="1.968"/>
+  <circle style="fill: rgb(95, 99, 104);" cx="11.966" cy="17.949" r="1.968"/>
+  <circle style="fill: rgb(95, 99, 104);" cx="17.998" cy="17.935" r="1.968"/>
+</svg>
