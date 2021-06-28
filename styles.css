@@ -97,6 +97,7 @@ body {
 .header {
     grid-area: header;
     height: 100%;
+    padding: 0 16px;
     width: 100%;
 }
 
@@ -114,7 +115,7 @@ body {
 .navbar > a {
     color: var(--text-color-dark);
     font-size: 14px;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .main-services {
