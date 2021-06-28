@@ -191,6 +191,10 @@ body {
     width: 272px;
 }
 
+.google-logo:hover {
+    cursor: pointer;
+}
+
 .searchbar-container {
     border: 1px solid rgb(223, 225, 229);
     border-radius: 40px;
