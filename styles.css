@@ -347,12 +347,12 @@ body {
     .conditions-settings {
         justify-self: center;
     }
-
+  }
 
   @media all and (max-width: 620px) {
-      .main-container {
-          width: 90vw;
-      }
+    .main-container {
+        width: 90vw;
+    }
   }
 
 @media all and (max-width: 600px) {
@@ -381,11 +381,11 @@ body {
         justify-self: center;
     }
 
-    @media all and (max-width: 480px) {
-        .google-logo {
-            height: 50px;
-            width: 40vh;
-        }
+}
+
+@media all and (max-width: 480px) {
+    .google-logo {
+        height: 50px;
+        width: 40vh;
     }
 }
- 
