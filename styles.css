@@ -78,6 +78,7 @@ a:hover {
 body {
     height: 100vh;
     width: 100vw;
+    overflow-y: hidden;
 }
 
 .page-container {
@@ -87,7 +88,7 @@ body {
         "main"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 63px 1fr 63px;
+    grid-template-rows: 63px 1fr minmax(48px, auto);
     height: 100%;
     width: 100%;
 }
@@ -112,7 +113,7 @@ body {
 
 .navbar > a {
     color: var(--text-color-dark);
-    font-size: 19px;
+    font-size: 14px;
     margin: 0 15px;
 }
 
@@ -120,6 +121,8 @@ body {
     align-items: center;
     color: var(--text-color-light);
     display: flex;
+    font-family: arial;
+    font-size: 13px;
     justify-self: end;
 }
 
@@ -129,8 +132,8 @@ body {
 
 .google-apps {
     border-radius: 50%;
-    padding: 10px;
-    width: 53px;
+    padding: 5px;
+    width: 37px;
 }
 
 .google-apps:hover {
@@ -141,13 +144,13 @@ body {
     background: #7b1fa2;
     border-radius: 50%;
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 500;
-    height: 43px;
+    height: 35px;
     padding: 10px;
     text-align: center;
     vertical-align: center;
-    width: 43px;
+    width: 35px;
 }
 
 .user-profile:hover {
@@ -168,7 +171,6 @@ body {
 }
 
 .main-container {
-    align-items: space-between;
     display: grid;
     grid-template-columns: 
         "logo"
@@ -177,23 +179,26 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto, 3);
     height: auto;
-    justify-items: center;
     margin-top: 20vh;
-    width: 840px;
+    place-items: start center;
+    transition: width 0.1s linear;
+    width: 600px;
 }
 
 .google-logo {
-    width: 350px;
+    height: 92px;
+    margin-bottom: 0;
+    width: 272px;
 }
 
 .searchbar-container {
-    border: 2px solid rgb(223, 225, 229);
+    border: 1px solid rgb(223, 225, 229);
     border-radius: 40px;
     display: grid;
     grid-template-areas: 
         "search-icon   searchbar   voice-control";
     grid-template-columns: auto 1fr auto;
-    height: 65px;
+    height: 47px;
     padding: 0 15px;
     place-items: center;
     width: 100%;
@@ -202,7 +207,7 @@ body {
 .search-magnifying-glass {
     justify-self: start;
     margin-right: 10px;
-    width: 30px;
+    width: 20px;
 }
 
 .searchbar-container {
@@ -217,7 +222,7 @@ body {
 #searchbar {
     border: none;
     color: var(--text-color-dark);
-    font-size: 20px;
+    font-size: 16px;
     height: 100%;
     width: 100%;
 }
@@ -234,7 +239,7 @@ body {
 }
 
 .voice-control-icon {
-    width: 30px;
+    width: 26px;
 }
 
 .main-buttons {
@@ -250,10 +255,11 @@ body {
     border: 1px solid rgb(248, 249, 250);
     border-radius: 4px;
     color: rgb(60, 64, 67);
-    font-size: 19px;
-    height: 50px;
-    margin: 8px;
-    padding: 0 18px;
+    font-size: 14px;
+    height: 36px;
+    line-height: 27px;
+    margin: 0 4px;
+    padding: 0 16px;
 }
 
 /******** Footer ********/
@@ -261,34 +267,93 @@ body {
     background: #f2f2f2;
     color: var(--footer-text-color);
     display: grid;
-    font-size: 19px;
+    font-size: 14px;
     grid-template-areas:
         "business-and-search   emissions-statement   conditions-settings";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-area: footer;
     height: 100%;
-    padding: 0 25px;
+    padding: 0 15px;
     place-items: center;
     width: 100%;
 }
 
 .footer li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .business-and-search {
+    align-items: center;
     display: flex;
+    grid-area: business-and-search;
     justify-self: start;
+}
+
+.emissions-statement {
+    grid-area: emissions-statement;
 }
 
 .emissions-icon {
     margin-right: 4px;
-    width: 16px;
+    width: 12.25px;
 }
 
 .conditions-settings {
+    align-items: center;
     display: flex;
+    grid-area: conditions-settings;
     justify-self: end;
 }
 
+/******** Media Queries ********/
+
+@media all and (max-width: 1200px) {
+    .footer {
+        grid-template-areas:
+            "emissions-statement   emissions-statement"
+            "business-and-search   conditions-settings";
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr 1fr;
+        padding: 18px 0 6px 0;
+        place-items: center;
+    }
+
+    .emissions-statement {
+        margin-bottom: 19px;
+    }
+
+  @media all and (max-width: 620px) {
+      .main-container {
+          width: 90vw;
+          /* margin: 20vh 10vw 0 10vw; */
+      }
+  }
+
+@media all and (max-width: 600px) {
+    .footer {
+        grid-template-areas:
+            "emissions-statement"
+            "business-and-search"
+            "conditions-settings";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 14px 0 6px 0;
+    }
+
+    .emissions-statement {
+        margin-bottom: 0;
+    }
+
+    .business-and-search {
+        align-self: center;
+        justify-self: center;
+        margin: 13px 0;
+    }
+
+    .conditions-settings {
+        align-self: center;
+        justify-self: center;
+    }
+}
+ 
