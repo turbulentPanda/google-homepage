@@ -199,19 +199,20 @@ body {
         "search-icon   searchbar   voice-control";
     grid-template-columns: auto 1fr auto;
     height: 47px;
+    margin: 30px 0;
     padding: 0 15px;
     place-items: center;
     width: 100%;
+}
+
+.searchbar-container:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 28%);
 }
 
 .search-magnifying-glass {
     justify-self: start;
     margin-right: 10px;
     width: 20px;
-}
-
-.searchbar-container {
-    margin: 30px 0;
 }
 
 .searchbar-form {
