@@ -151,7 +151,7 @@ body {
 }
 
 .user-profile:hover {
-    box-shadow: 0 0 0 7px #eff0f0;
+    box-shadow: 0 0 0 5px #eff0f0;
     text-decoration: none;
 }
 
