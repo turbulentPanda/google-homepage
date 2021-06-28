@@ -52,6 +52,10 @@ table {
 /******** General Page Layout and Setup ********/
 :root {
     font-family: 'Roboto', sans-serif;
+    
+    --header-text-color-dark: #222;
+    --header-text-color-light: rgba(0, 0 ,0 ,.87);
+    --footer-text-color: #70757a;
 }
 
 * {
@@ -101,3 +105,4 @@ body {
     height: 100%;
     width: 100%;
 }
+
