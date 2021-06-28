@@ -383,7 +383,8 @@ body {
 
     @media all and (max-width: 480px) {
         .google-logo {
-            width: 40%;
+            height: 50px;
+            width: 40vh;
         }
     }
 }
