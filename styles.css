@@ -380,5 +380,11 @@ body {
         align-self: center;
         justify-self: center;
     }
+
+    @media all and (max-width: 480px) {
+        .google-logo {
+            width: 40%;
+        }
+    }
 }
  
