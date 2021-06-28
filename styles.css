@@ -264,11 +264,19 @@ body {
     border: 1px solid rgb(248, 249, 250);
     border-radius: 4px;
     color: rgb(60, 64, 67);
+    cursor: pointer;
     font-size: 14px;
     height: 36px;
     line-height: 27px;
     margin: 0 4px;
     padding: 0 16px;
+}
+
+.main-button:hover {
+    background: #f8f9fa;
+    border: 1px solid #dadce0; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    color: #202124;
 }
 
 /******** Footer ********/
