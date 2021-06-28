@@ -258,7 +258,8 @@ body {
 
 /******** Footer ********/
 .footer {
-    background: lightblue;
+    background: #f2f2f2;
+    color: var(--footer-text-color);
     grid-area: footer;
     height: 100%;
     width: 100%;
